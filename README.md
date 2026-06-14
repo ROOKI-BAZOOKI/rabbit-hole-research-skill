@@ -6,19 +6,29 @@ This package is runtime-only and git-ready. It excludes development evals, packa
 
 ## Install
 
-User-level install:
+Important: the installed skill directory should be named `rabbit-hole-research`.
+
+The GitHub repository is named `rabbit-hole-research-skill`, but Claude Code uses the installed directory name as the slash command name, and Codex UI discovery is most reliable when the folder and `SKILL.md` name match.
+
+### Codex
+
+From Codex, install the repository root as the skill named `rabbit-hole-research`:
 
 ```bash
-mkdir -p ~/.agents/skills
-cp -R rabbit-hole-research ~/.agents/skills/
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo ROOKI-BAZOOKI/rabbit-hole-research-skill \
+  --path . \
+  --name rabbit-hole-research
 ```
+### Claude Code
 
-Repo-level install:
-
-```bash
-mkdir -p .agents/skills
-cp -R rabbit-hole-research .agents/skills/
-```
+Install into:
+~/.claude/skills/rabbit-hole-research/
+or project-local:
+.claude/skills/rabbit-hole-research/
+Invoke with:
+/rabbit-hole-research
+No separate .claude/commands/ file is needed. Claude Code skills already create slash commands.
 
 ## Use
 
