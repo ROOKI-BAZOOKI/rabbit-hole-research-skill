@@ -1,10 +1,10 @@
 ---
 name: rabbit-hole-research
-description: Use this skill for controlled deep research: rabbit-hole/exhaustive research, literature or technical surveys, market/product/source-backed research, implementation/prior-work comparisons when explicitly relevant, Obsidian-ready knowledge bases, long-horizon Goal-mode research, or tasks where unclear requirements could waste major effort. Runs one compact base research pipeline with optional overlays for mini-grill validation, Codex subagents, Goal AFK work, Obsidian output, source/claim ledgers, anti-loop stop rules, and final audit. Do not use for quick factual lookups, simple summaries of provided text, one-source answers, or direct code edits with clear requirements.
+description: Controlled deep research for literature or technical surveys, source-backed synthesis, Obsidian notes, Goal-mode work, and bounded rabbit-hole exploration.
+argument-hint: "<research question>"
 license: MIT
-compatibility: OpenAI Codex CLI/App/IDE with optional web, GitHub, filesystem, shell, and Codex subagents.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Rabbit-Hole Research
