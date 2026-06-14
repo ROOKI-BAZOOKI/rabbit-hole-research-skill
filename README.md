@@ -1,6 +1,6 @@
 # rabbit-hole-research
 
-Production Codex skill for controlled deep research, Obsidian-ready knowledge bases, and long-horizon `/goal` research.
+Agent skill for controlled deep research, source-backed synthesis, Obsidian-ready knowledge bases, and long-horizon Goal-mode work.
 
 This package is runtime-only and git-ready. It excludes development evals, package audit scripts, prior-art build notes, and other maintenance artifacts.
 
@@ -20,19 +20,44 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --path . \
   --name rabbit-hole-research
 ```
+
 ### Claude Code
 
 Install into:
+
+```text
 ~/.claude/skills/rabbit-hole-research/
+```
+
 or project-local:
+
+```text
 .claude/skills/rabbit-hole-research/
+```
+
 Invoke with:
+
+```text
 /rabbit-hole-research
-No separate .claude/commands/ file is needed. Claude Code skills already create slash commands.
+```
+
+No separate `.claude/commands/` file is needed. Claude Code skills already create slash commands.
 
 ## Use
 
-Invoke explicitly with `$rabbit-hole-research` or describe a deep research task that matches the skill description.
+Codex:
+
+```text
+$rabbit-hole-research
+```
+
+Claude Code:
+
+```text
+/rabbit-hole-research
+```
+
+You can also describe a deep research task that matches the skill description.
 
 For long AFK runs, first let the skill create the research contract and durable control files, then activate `/goal` only after acceptance criteria, evidence standards, budget behavior, and stop rules are clear.
 
@@ -46,12 +71,8 @@ If the task explicitly asks for existing tools, repos, implementations, workflow
 - `references/obsidian-output.md` — Obsidian note and vault structure.
 - `assets/goal-contract-template.md` — durable Goal contract template.
 - `assets/research-control-template.md` — durable research control template.
+- `agents/openai.yaml` — Codex UI metadata for skill lists and chips.
 - `LICENSE` — MIT license matching the `SKILL.md` metadata.
-- `.gitignore` — minimal local scratch/cache ignores for repo use.
-
-## Architecture
-
-Version 1.0.0 is the minimal git-ready runtime build. It keeps the base-pipeline-plus-overlays architecture, removes the dedicated GitHub/prior-art overlay, and folds the final quality gate into `SKILL.md` instead of shipping a separate audit reference.
 
 ## License
 
